@@ -11,5 +11,5 @@ class Delete$STUDLY_NAME$Action extends DeleteAction implements DeleteActionInte
     /**
      * {@inheritDoc}
      */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+    public const ACTIONABLE = $STUDLY_NAME$Repository::class;
 }

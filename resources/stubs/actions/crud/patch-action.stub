@@ -11,5 +11,5 @@ class Patch$STUDLY_NAME$Action extends PatchAction implements PatchActionInterfa
     /**
      * {@inheritDoc}
      */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+    public const ACTIONABLE = $STUDLY_NAME$Repository::class;
 }

@@ -11,5 +11,5 @@ class List$STUDLY_NAME$Action extends ListAction implements ListActionInterface
     /**
      * {@inheritDoc}
      */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+    public const ACTIONABLE = $STUDLY_NAME$Repository::class;
 }

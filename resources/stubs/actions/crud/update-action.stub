@@ -11,5 +11,5 @@ class Update$STUDLY_NAME$Action extends UpdateAction implements UpdateActionInte
     /**
      * {@inheritDoc}
      */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+    public const ACTIONABLE = $STUDLY_NAME$Repository::class;
 }

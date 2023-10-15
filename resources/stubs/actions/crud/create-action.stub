@@ -11,5 +11,5 @@ class Create$STUDLY_NAME$Action extends CreateAction implements CreateActionInte
     /**
      * {@inheritDoc}
      */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+    public const ACTIONABLE = $STUDLY_NAME$Repository::class;
 }
