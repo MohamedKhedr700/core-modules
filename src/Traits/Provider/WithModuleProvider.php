@@ -15,7 +15,7 @@ trait WithModuleProvider
 
             $this->publishes([
                 $config => config_path(basename($config)),
-            ], 'module-config');
+            ], 'modules-config');
         }
     }
 
@@ -36,7 +36,7 @@ trait WithModuleProvider
 
         $this->publishes([
             $stubs => app_path('Console/laravel-modules/stubs'),
-        ], 'module-stubs');
+        ], 'modules-stubs');
     }
 
     /**
