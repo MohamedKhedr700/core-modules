@@ -1,0 +1,9 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\Contracts;
+
+use $MODULE_NAMESPACE$\Core\Repositories\Contracts\RepositoryInterface;
+
+interface $STUDLY_NAME$RepositoryInterface extends RepositoryInterface
+{
+}

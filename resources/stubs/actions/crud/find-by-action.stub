@@ -1,0 +1,15 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\FindByActionInterface;
+use $MODULE_NAMESPACE$\Core\Actions\Crud\FindByAction;
+
+class FindBy$STUDLY_NAME$Action extends FindByAction implements FindByActionInterface
+{
+    /**
+     * {@inheritDoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+}

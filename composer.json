@@ -1,0 +1,30 @@
+{
+    "name": "raid/core-modules",
+    "description": "Raid Core Modules",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "require": {
+        "raid/core-command": "dev-main",
+        "nwidart/laravel-modules": "^10.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Raid\\Core\\Modules\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Raid\\Core\\Modules\\Providers\\ModuleServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamedkhedr700",
+            "email": "mohamedkhedr700@gmail.com"
+        }
+    ]
+}

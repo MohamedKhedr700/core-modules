@@ -1,0 +1,21 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Models;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\ModelFilter\$STUDLY_NAME$Filter;
+use $MODULE_NAMESPACE$\Core\Models\Model;
+
+class $STUDLY_NAME$ extends Model
+{
+    /**
+     * {@inheritdoc}
+     */
+    protected string $filter = $STUDLY_NAME$Filter::class;
+
+    /**
+     * {@inheritdoc}
+     */
+    protected $fillable = [
+        //
+    ];
+}

@@ -1,0 +1,16 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Services;
+
+use $MODULE_NAMESPACE$\Core\Services\ApiService;
+use $MODULE_NAMESPACE$\Core\Services\Contracts\ServiceInterface;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+
+class $STUDLY_NAME$Service extends ApiService implements ServiceInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+}
+

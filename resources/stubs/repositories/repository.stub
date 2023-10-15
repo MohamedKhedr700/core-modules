@@ -1,0 +1,15 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\Contracts\$STUDLY_NAME$RepositoryInterface;
+use $MODULE_NAMESPACE$\Core\Repositories\ApiRepository;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities\$STUDLY_NAME$Utility;
+
+class $STUDLY_NAME$Repository extends ApiRepository implements $STUDLY_NAME$RepositoryInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public const UTILITY = $STUDLY_NAME$Utility::class;
+}

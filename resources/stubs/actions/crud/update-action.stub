@@ -1,0 +1,15 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\UpdateActionInterface;
+use $MODULE_NAMESPACE$\Core\Actions\Crud\UpdateAction;
+
+class Update$STUDLY_NAME$Action extends UpdateAction implements UpdateActionInterface
+{
+    /**
+     * {@inheritDoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+}

@@ -1,0 +1,58 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Name
+    |--------------------------------------------------------------------------
+    */
+
+    'name' => '',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Actions
+    |--------------------------------------------------------------------------
+    */
+
+    'actions' => [
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Create$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Delete$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Find$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\FindBy$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\List$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Update$STUDLY_NAME$Action::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Events
+    |--------------------------------------------------------------------------
+    */
+
+    'events' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Gates
+    |--------------------------------------------------------------------------
+    */
+
+    'gates' => [
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Gates\$STUDLY_NAME$Gate::class,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Error Codes
+    |--------------------------------------------------------------------------
+    */
+
+    'error_codes' => [
+        'create_fail' => '0000',
+        'update_fail' => '0010',
+        'delete_fail' => '0020',
+        'login_fail' => '0030',
+    ],
+];

@@ -1,0 +1,13 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use $MODULE_NAMESPACE$\Core\Providers\RouteServiceProvider as BaseRouteServiceProvider;
+
+class $CLASS$ extends BaseRouteServiceProvider
+{
+    /**
+     * @inheritdoc
+     */
+    public const SERVICE_PROVIDER = $MODULE$ServiceProvider::class;
+}

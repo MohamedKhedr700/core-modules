@@ -1,0 +1,16 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\Core\Providers\ServiceProvider;
+
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * {@inheritdoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+
+
+}

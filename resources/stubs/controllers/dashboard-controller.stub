@@ -1,0 +1,76 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Dashboard;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Create$STUDLY_NAME$Action;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Delete$STUDLY_NAME$Action;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Find$STUDLY_NAME$Action;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\List$STUDLY_NAME$Action;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Update$STUDLY_NAME$Action;
+use $MODULE_NAMESPACE$\Core\Exceptions\UnvalidatedRequestException;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Http\JsonResponse;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Store$STUDLY_NAME$Request;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Update$STUDLY_NAME$Request;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\List$STUDLY_NAME$Request;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
+use $MODULE_NAMESPACE$\Core\Http\Controllers\ApiController;
+
+class $STUDLY_NAME$Controller extends ApiController
+{
+    /**
+     * {@inheritdoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+
+    /**
+     * Store a new resource.
+     *
+     * @throws AuthorizationException|UnvalidatedRequestException
+     */
+    public function store(Store$STUDLY_NAME$Request $request, Create$STUDLY_NAME$Action $create$STUDLY_NAME$Action): JsonResponse
+    {
+        return parent::storeResource($request, $create$STUDLY_NAME$Action);
+    }
+
+    /**
+     * List resources.
+     *
+     * @throws AuthorizationException|UnvalidatedRequestException
+     */
+    public function index(List$STUDLY_NAME$Request $request, List$STUDLY_NAME$Action $list$STUDLY_NAME$Action): JsonResponse
+    {
+        return parent::listResources($request, $list$STUDLY_NAME$Action);
+    }
+
+    /**
+     * Show resource.
+     *
+     * @throws AuthorizationException
+     */
+    public function show($STUDLY_NAME$ $id, Find$STUDLY_NAME$Action $find$STUDLY_NAME$Action): JsonResponse
+    {
+        return parent::showResource($id, $find$STUDLY_NAME$Action);
+    }
+
+    /**
+     * Update resource.
+     *
+     * @throws AuthorizationException|UnvalidatedRequestException
+     */
+    public function update(Update$STUDLY_NAME$Request $request, $STUDLY_NAME$ $id, Update$STUDLY_NAME$Action $update$STUDLY_NAME$Action): JsonResponse
+    {
+        return parent::updateResource($request, $id, $update$STUDLY_NAME$Action);
+    }
+
+    /**
+     * Delete resource.
+     *
+     * @throws AuthorizationException
+     */
+    public function delete($STUDLY_NAME$ $id, Delete$STUDLY_NAME$Action $delete$STUDLY_NAME$Action): JsonResponse
+    {
+        return parent::deleteResource($id, $delete$STUDLY_NAME$Action);
+    }
+}

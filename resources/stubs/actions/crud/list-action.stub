@@ -1,0 +1,15 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\ListActionInterface;
+use $MODULE_NAMESPACE$\Core\Actions\Crud\ListAction;
+
+class List$STUDLY_NAME$Action extends ListAction implements ListActionInterface
+{
+    /**
+     * {@inheritDoc}
+     */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+}

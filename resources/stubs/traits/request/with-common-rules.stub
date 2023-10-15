@@ -1,0 +1,26 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Traits\Request;
+
+trait With$STUDLY_NAME$CommonRules
+{
+    /**
+     * Define common Rules.
+     */
+    public function commonRules(): array
+    {
+        return [
+           //
+        ];
+    }
+
+    /**
+     * Define attributes localization.
+     */
+    public function attributes(): array
+    {
+        return [
+            //
+        ];
+    }
+}

@@ -1,0 +1,9 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities\Contracts;
+
+use $MODULE_NAMESPACE$\Core\Utilities\Contracts\UtilityInterface;
+
+interface $STUDLY_NAME$UtilityInterface extends UtilityInterface
+{
+}

@@ -1,0 +1,26 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Modules\Core\Http\Controllers\ApiCoreController;
+use Modules\$STUDLY_NAME$\Services\$STUDLY_NAME$Service;
+
+class $CLASS$ extends ApiCoreController
+{
+    /**
+     * @var string
+     */
+    protected string $serviceClass = $STUDLY_NAME$Service::class;
+
+    /**
+     * @var array|string[]
+     */
+    protected array $validation = [];
+
+    /**
+     * @var array
+     */
+    protected array $allowedRequestData = [];
+}
