@@ -22,5 +22,6 @@ class PublishModuleCommand extends PublishCommand
     public function handle(): void
     {
         $this->publishCommand('module-config');
+        $this->publishCommand('module-stubs');
     }
 }
