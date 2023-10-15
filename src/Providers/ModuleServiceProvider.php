@@ -3,7 +3,9 @@
 namespace Raid\Core\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Raid\Core\Modules\Commands\CreateModuleCommand;
 use Raid\Core\Modules\Commands\PublishModuleCommand;
+use Raid\Core\Modules\Commands\RenameModuleCommand;
 use Raid\Core\Modules\Traits\Provider\WithModuleProvider;
 
 class ModuleServiceProvider extends ServiceProvider
@@ -14,7 +16,9 @@ class ModuleServiceProvider extends ServiceProvider
      * The commands to be registered.
      */
     protected array $commands = [
+        CreateModuleCommand::class,
         PublishModuleCommand::class,
+        RenameModuleCommand::class,
     ];
 
     /**
