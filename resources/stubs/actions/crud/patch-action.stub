@@ -3,8 +3,8 @@
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
 
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\PatchActionInterface;
-use $MODULE_NAMESPACE$\Actions\Crud\PatchAction;
+use Raid\Core\Action\Actions\Contracts\Crud\PatchActionInterface;
+use Raid\Core\Action\Actions\Crud\PatchAction;
 
 class Patch$STUDLY_NAME$Action extends PatchAction implements PatchActionInterface
 {

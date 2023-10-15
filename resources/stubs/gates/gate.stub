@@ -2,10 +2,10 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Gates;
 
-use $MODULE_NAMESPACE$\Account\Contracts\AccountInterface;
+use Raid\Core\Auth\Models\Authentication\Contracts\AccountInterface;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
-use $MODULE_NAMESPACE$\Core\Http\Gates\Contracts\GateInterface;
-use $MODULE_NAMESPACE$\Core\Http\Gates\Gate;
+use Raid\Core\Gate\Gates\Contracts\GateInterface;
+use Raid\Core\Gate\Gates\Gate;
 
 class $STUDLY_NAME$Gate extends Gate implements GateInterface
 {

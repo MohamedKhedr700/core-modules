@@ -3,7 +3,7 @@
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests;
 
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Traits\Request\With$STUDLY_NAME$CommonRules;
-use $MODULE_NAMESPACE$\Core\Http\Requests\FormRequest;
+use Raid\Core\Request\Requests\FormRequest;
 
 class Store$STUDLY_NAME$Request extends FormRequest
 {

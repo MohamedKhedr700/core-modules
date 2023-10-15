@@ -3,8 +3,8 @@
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
 
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\FindActionInterface;
-use $MODULE_NAMESPACE$\Core\Actions\Crud\FindAction;
+use Raid\Core\Action\Actions\Contracts\Crud\FindActionInterface;
+use Raid\Core\Action\Actions\Crud\FindAction;
 
 class Find$STUDLY_NAME$Action extends FindAction implements FindActionInterface
 {

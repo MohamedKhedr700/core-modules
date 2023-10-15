@@ -2,8 +2,8 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests;
 
-use $MODULE_NAMESPACE$\Core\Http\Requests\FormRequest;
-use $MODULE_NAMESPACE$\Core\Traits\Request\WithPaginationCommonRules;
+use Raid\Core\Request\Requests\FormRequest;
+use Raid\Core\Request\Traits\Request\WithPaginationCommonRules;
 
 class List$STUDLY_NAME$Request extends FormRequest
 {

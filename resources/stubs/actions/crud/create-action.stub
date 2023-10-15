@@ -3,8 +3,8 @@
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud;
 
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\Core\Actions\Contracts\Crud\CreateActionInterface;
-use $MODULE_NAMESPACE$\Core\Actions\Crud\CreateAction;
+use Raid\Core\Action\Actions\Contracts\Crud\CreateActionInterface;
+use Raid\Core\Action\Actions\Crud\CreateAction;
 
 class Create$STUDLY_NAME$Action extends CreateAction implements CreateActionInterface
 {
