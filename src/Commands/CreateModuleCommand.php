@@ -49,7 +49,7 @@ class CreateModuleCommand extends Command
      */
     private function renameModule($moduleName): void
     {
-        $this->call('module:rename', [
+        $this->call('core:rename-module', [
             'module' => $moduleName,
         ]);
     }
