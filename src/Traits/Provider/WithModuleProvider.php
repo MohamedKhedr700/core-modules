@@ -40,7 +40,7 @@ trait WithModuleProvider
     }
 
     /**
-     * Register auth.
+     * Register module.
      */
     private function registerModule(): void
     {
