@@ -2,35 +2,19 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities;
 
-use $MODULE_NAMESPACE$\Core\Utilities\Utility;
+use Raid\Core\Repository\Utilities\Utility;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities\Contracts\$STUDLY_NAME$UtilityInterface;
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider;
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\Contracts\$STUDLY_NAME$RepositoryInterface;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider;
 
 class $STUDLY_NAME$Utility extends Utility implements $STUDLY_NAME$UtilityInterface
 {
     /**
      * {@inheritdoc}
      */
-    public const MODULE_NAME = '$LOWER_NAME$';
-
-    /**
-     * {@inheritdoc}
-     */
-    public const ROUTE_SERVICE_PROVIDER = RouteServiceProvider::class;
-
-    /**
-     * {@inheritdoc}
-     */
-    public const REPOSITORY = $STUDLY_NAME$Repository::class;
-
-    /**
-     * {@inheritdoc}
-     */
-    public const REPOSITORY_INTERFACE = $STUDLY_NAME$RepositoryInterface::class;
+    public const MODULE = '$LOWER_NAME$';
 
     /**
      * {@inheritdoc}
@@ -40,5 +24,15 @@ class $STUDLY_NAME$Utility extends Utility implements $STUDLY_NAME$UtilityInterf
     /**
      * {@inheritdoc}
      */
+    public const REPOSITORY = $STUDLY_NAME$Repository::class;
+
+    /**
+     * {@inheritdoc}
+     */
     public const TRANSFORMER = $STUDLY_NAME$Transformer::class;
+
+    /**
+     * {@inheritdoc}
+     */
+    public const ROUTE_SERVICE_PROVIDER = RouteServiceProvider::class;
 }
