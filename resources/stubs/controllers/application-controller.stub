@@ -2,10 +2,10 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Application;
 
-use $MODULE_NAMESPACE$\Core\Http\Controllers\ApiController;
+use Raid\Core\Controller\Controllers\Controller;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
 
-class $STUDLY_NAME$Controller extends ApiController
+class $STUDLY_NAME$Controller extends Controller
 {
     /**
      * {@inheritdoc}

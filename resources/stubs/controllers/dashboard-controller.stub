@@ -7,7 +7,7 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Delete$STUDLY_NAME$Action;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Find$STUDLY_NAME$Action;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\List$STUDLY_NAME$Action;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Update$STUDLY_NAME$Action;
-use $MODULE_NAMESPACE$\Core\Exceptions\UnvalidatedRequestException;
+use Raid\Core\Request\Exceptions\UnvalidatedRequestException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Store$STUDLY_NAME$Request;
@@ -15,9 +15,9 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Update$STUDLY_NAME$Request;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\List$STUDLY_NAME$Request;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
-use $MODULE_NAMESPACE$\Core\Http\Controllers\ApiController;
+use Raid\Core\Controller\Controllers\Controller;
 
-class $STUDLY_NAME$Controller extends ApiController
+class $STUDLY_NAME$Controller extends Controller
 {
     /**
      * {@inheritdoc}
