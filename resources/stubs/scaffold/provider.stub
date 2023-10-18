@@ -3,7 +3,7 @@
 namespace $NAMESPACE$;
 
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\Core\Providers\ServiceProvider;
+use Raid\Core\Modules\Providers\ServiceProvider;
 
 class $CLASS$ extends ServiceProvider
 {

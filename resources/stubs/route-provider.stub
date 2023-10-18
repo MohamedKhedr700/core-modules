@@ -2,9 +2,9 @@
 
 namespace $NAMESPACE$;
 
-use $MODULE_NAMESPACE$\Core\Providers\RouteServiceProvider as BaseRouteServiceProvider;
+use Raid\Core\Modules\Providers\RouteServiceProvider as RaidRouteServiceProvider;
 
-class $CLASS$ extends BaseRouteServiceProvider
+class RouteServiceProvider extends RaidRouteServiceProvider
 {
     /**
      * @inheritdoc
