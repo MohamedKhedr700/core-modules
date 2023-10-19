@@ -11,7 +11,7 @@ trait WithRenameLang
     {
         $this->info('Renaming module lang...');
 
-        $langPath = "{$modulePath}/Resources/lang";
+        $langPath = "{$modulePath}/Resources/lang/en";
 
         $this->renameLangClass($langPath, $moduleName);
     }
@@ -21,7 +21,9 @@ trait WithRenameLang
      */
     private function renameLangClass(string $langPath, string $moduleName): void
     {
-        $langClass = "{$langPath}/Industry.php";
+        $moduleName = strtolower($moduleName);
+
+        $langClass = "{$langPath}/industry.php";
 
         $lang = "{$langPath}/{$moduleName}.php";
 
