@@ -4,20 +4,86 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "015a92c7a96f167a2fd677631ed14c5a",
+    "content-hash": "cbb33b019eae1d0fea18eb3d5de3a348",
     "packages": [
+        {
+            "name": "laravel/pint",
+            "version": "v1.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pint.git",
+                "reference": "93b2d0d49719bc6e444ba21cd4dbbccec935413d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/93b2d0d49719bc6e444ba21cd4dbbccec935413d",
+                "reference": "93b2d0d49719bc6e444ba21cd4dbbccec935413d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-tokenizer": "*",
+                "ext-xml": "*",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.34.1",
+                "illuminate/view": "^10.23.1",
+                "laravel-zero/framework": "^10.1.2",
+                "mockery/mockery": "^1.6.6",
+                "nunomaduro/larastan": "^2.6.4",
+                "nunomaduro/termwind": "^1.15.1",
+                "pestphp/pest": "^2.18.2"
+            },
+            "bin": [
+                "builds/pint"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "An opinionated code formatter for PHP.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "format",
+                "formatter",
+                "lint",
+                "linter",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pint/issues",
+                "source": "https://github.com/laravel/pint"
+            },
+            "time": "2023-10-10T15:39:09+00:00"
+        },
         {
             "name": "nwidart/laravel-modules",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nWidart/laravel-modules.git",
-                "reference": "103ec429fdbdaa2a62a250a3878c6bd6336a40d7"
+                "reference": "ef67a7367223ab96539136116d69405d1c21c321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/103ec429fdbdaa2a62a250a3878c6bd6336a40d7",
-                "reference": "103ec429fdbdaa2a62a250a3878c6bd6336a40d7",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/ef67a7367223ab96539136116d69405d1c21c321",
+                "reference": "ef67a7367223ab96539136116d69405d1c21c321",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +144,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nWidart/laravel-modules/issues",
-                "source": "https://github.com/nWidart/laravel-modules/tree/master"
+                "source": "https://github.com/nWidart/laravel-modules/tree/10.0.2"
             },
             "funding": [
                 {
@@ -86,7 +152,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-16T17:07:37+00:00"
+            "time": "2023-10-18T19:14:29+00:00"
         },
         {
             "name": "raid/core-command",
@@ -150,11 +216,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "raid/core-command": 20
+        "raid/core-command": 20,
+        "nwidart/laravel-modules": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^8.2"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }

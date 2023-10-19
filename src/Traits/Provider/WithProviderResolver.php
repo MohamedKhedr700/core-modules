@@ -2,7 +2,6 @@
 
 namespace Raid\Core\Modules\Traits\Provider;
 
-use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Config;
 
 trait WithProviderResolver
