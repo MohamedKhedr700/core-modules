@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Raid\Core\Modules\Traits\Command\WithRenameActions;
 use Raid\Core\Modules\Traits\Command\WithRenameControllers;
 use Raid\Core\Modules\Traits\Command\WithRenameGates;
+use Raid\Core\Modules\Traits\Command\WithRenameLang;
 use Raid\Core\Modules\Traits\Command\WithRenameModel;
 use Raid\Core\Modules\Traits\Command\WithRenameRepository;
 use Raid\Core\Modules\Traits\Command\WithRenameRequests;
@@ -19,16 +20,17 @@ use Raid\Core\Modules\Traits\Command\WithRenameUtility;
 
 class RenameModuleCommand extends Command
 {
-    use WithRenameActions,
-        WithRenameControllers,
-        WithRenameRequests,
-        WithRenameTransformer,
-        WithRenameModel,
-        WithRenameRepository,
-        WithRenameService,
-        WithRenameUtility,
-        WithRenameTraits,
-        WithRenameGates;
+    use WithRenameActions;
+    use WithRenameControllers;
+    use WithRenameGates;
+    use WithRenameLang;
+    use WithRenameModel;
+    use WithRenameRepository;
+    use WithRenameRequests;
+    use WithRenameService;
+    use WithRenameTraits;
+    use WithRenameTransformer;
+    use WithRenameUtility;
 
     /**
      * The name and signature of the console command.
@@ -56,15 +58,16 @@ class RenameModuleCommand extends Command
 
         $this->renameActions($modulePath, $module);
         $this->renameControllers($modulePath, $module);
-        $this->renameRequests($modulePath, $module);
-        $this->renameTransformer($modulePath, $module);
+        $this->renameGates($modulePath, $module);
+        $this->renameLang($modulePath, $module);
         $this->renameModel($modulePath, $module);
         $this->renameModelFilter($modulePath, $module);
         $this->renameRepository($modulePath, $module);
+        $this->renameRequests($modulePath, $module);
         $this->renameService($modulePath, $module);
-        $this->renameUtility($modulePath, $module);
         $this->renameTraits($modulePath, $module);
-        $this->renameGates($modulePath, $module);
+        $this->renameTransformer($modulePath, $module);
+        $this->renameUtility($modulePath, $module);
 
         return static::SUCCESS;
     }

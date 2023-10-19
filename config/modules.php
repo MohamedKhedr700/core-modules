@@ -62,6 +62,7 @@ return [
             'actions/crud/update-action' => 'Actions/Crud/UpdateIndustryAction.php',
             'actions/crud/delete-action' => 'Actions/Crud/DeleteIndustryAction.php',
             'gates/gate' => 'Http/Gates/IndustryGate.php',
+            'lang/en' => 'Resources/lang/en/industry.php',
         ],
         'replacements' => [
             'vite' => ['LOWER_NAME'],
@@ -96,7 +97,7 @@ return [
             'actions/crud/delete-action' => ['LOWER_NAME', 'MODULE_NAMESPACE', 'STUDLY_NAME'],
             'gates/gate' => ['LOWER_NAME', 'MODULE_NAMESPACE', 'STUDLY_NAME', 'LOWER_NAME'],
         ],
-        'gitkeep' => true,
+        'gitkeep' => false,
     ],
     'paths' => [
         /*
@@ -148,9 +149,9 @@ return [
             'filter' => ['path' => 'Http/Middleware', 'generate' => true],
             'request' => ['path' => 'Http/Requests', 'generate' => true],
             'provider' => ['path' => 'Providers', 'generate' => true],
-            'assets' => ['path' => 'Resources/assets', 'generate' => true],
+            'assets' => ['path' => 'Resources/assets', 'generate' => false],
             'lang' => ['path' => 'Resources/lang', 'generate' => true],
-            'views' => ['path' => 'Resources/views', 'generate' => true],
+            'views' => ['path' => 'Resources/views', 'generate' => false],
             'test' => ['path' => 'Tests/Unit', 'generate' => true],
             'test-feature' => ['path' => 'Tests/Feature', 'generate' => true],
             'event' => ['path' => 'Events', 'generate' => false],
