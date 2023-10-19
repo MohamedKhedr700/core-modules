@@ -2,9 +2,9 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories;
 
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\Contracts\$STUDLY_NAME$RepositoryInterface;
-use Raid\Core\Repository\Repositories\Repository;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities\$STUDLY_NAME$Utility;
+use Raid\Core\Repository\Repositories\Repository;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\Contracts\$STUDLY_NAME$RepositoryInterface;
 
 class $STUDLY_NAME$Repository extends Repository implements $STUDLY_NAME$RepositoryInterface
 {

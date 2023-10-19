@@ -2,9 +2,9 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Services;
 
-use Raid\Core\Repository\Services\Contracts\ActionServiceInterface;
-use Raid\Core\Repository\Services\ActionService;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use Raid\Core\Repository\Services\ActionService;
+use Raid\Core\Repository\Services\Contracts\ActionServiceInterface;
 
 class $STUDLY_NAME$Service extends ActionService implements ActionServiceInterface
 {
