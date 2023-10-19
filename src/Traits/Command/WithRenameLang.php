@@ -21,9 +21,9 @@ trait WithRenameLang
      */
     private function renameLangClass(string $langPath, string $moduleName): void
     {
-        $langClass = "{$langPath}/IndustryUtility.php";
+        $langClass = "{$langPath}/Industry.php";
 
-        $lang = "{$langPath}/{$moduleName}Utility.php";
+        $lang = "{$langPath}/{$moduleName}.php";
 
         $this->renameFile($langClass, $lang);
     }
