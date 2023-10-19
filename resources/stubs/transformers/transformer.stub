@@ -12,8 +12,6 @@ class $STUDLY_NAME$Transformer extends Transformer
      */
     public function transform($STUDLY_NAME$ $$LOWER_NAME$): array
     {
-        return [
-           //
-        ];
+        return [];
     }
 }

@@ -9,9 +9,7 @@ trait With$STUDLY_NAME$CommonRules
      */
     public function commonRules(): array
     {
-        return [
-           //
-        ];
+        return [];
     }
 
     /**
@@ -19,8 +17,6 @@ trait With$STUDLY_NAME$CommonRules
      */
     public function attributes(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 }

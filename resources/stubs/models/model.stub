@@ -15,7 +15,5 @@ class $STUDLY_NAME$ extends Model
     /**
      * {@inheritdoc}
      */
-    protected $fillable = [
-        //
-    ];
+    protected $fillable = [];
 }
