@@ -173,6 +173,8 @@ return [
             'routes-dashboard' => ['path' => 'Routes/Dashboard', 'generate' => true],
             'utilities' => ['path' => 'Utilities', 'generate' => true],
             'actions-crud' => ['path' => 'Actions/Crud', 'generate' => true],
+            'events' => ['path' => 'Events', 'generate' => true],
+            'listeners' => ['path' => 'Listeners', 'generate' => true],
         ],
     ],
 
