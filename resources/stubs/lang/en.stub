@@ -1,6 +1,8 @@
 <?php
 
 return [
+    // module name
+    '$LOWER_NAME$' => '$STUDLY_NAME$',
 
     // attributes
     'attributes' => [];
