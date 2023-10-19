@@ -22,29 +22,31 @@ trait WithProviderResolver
     }
 
     /**
-     * Register translations.
-     */
-    public function registerTranslations(): void
-    {
-        $langPath = module_path(static::getModuleNameUpper(), 'Resources/lang');
-
-        $this->loadTranslationsFrom($langPath, static::getModuleNameUpper());
-        $this->loadJsonTranslationsFrom($langPath);
-    }
-
-    /**
      * Register config.
      */
     protected function registerConfig(): void
     {
+        $repositoryConfigPath = module_path(static::getModule(true), 'Config/config.php');
+
         $this->publishes([
-            module_path(static::getModuleNameUpper(), 'Config/config.php') => config_path(static::getModuleNameLower().'.php'),
+            $repositoryConfigPath => config_path(static::getModule().'.php'),
         ], 'config');
 
         $this->mergeConfigFrom(
-            module_path(static::getModuleNameUpper(), 'Config/config.php'),
-            static::getModuleNameLower()
+            $repositoryConfigPath,
+            static::getModule()
         );
+    }
+
+    /**
+     * Register translations.
+     */
+    public function registerTranslations(): void
+    {
+        $langPath = module_path(static::getModule(true), 'Resources/lang');
+
+        $this->loadTranslationsFrom($langPath, static::getModule(true));
+        $this->loadJsonTranslationsFrom($langPath);
     }
 
     /**
@@ -52,15 +54,17 @@ trait WithProviderResolver
      */
     public function registerViews(): void
     {
-        $viewPath = resource_path('views/modules/'.static::getModuleNameLower());
+        $moduleNameLower = static::getModule();
 
-        $sourcePath = module_path(static::getModuleNameUpper(), 'Resources/views');
+        $viewPath = resource_path('views/modules/'.$moduleNameLower);
+
+        $sourcePath = module_path(static::getModule(true), 'Resources/views');
 
         $this->publishes([
             $sourcePath => $viewPath,
-        ], ['views', static::getModuleNameLower().'-module-views']);
+        ], ['views', $moduleNameLower.'-module-views']);
 
-        $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->getModuleNameLower());
+        $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $moduleNameLower);
     }
 
     /**
@@ -91,8 +95,8 @@ trait WithProviderResolver
         $paths = [];
 
         foreach (Config::get('view.paths') as $path) {
-            if (is_dir($path.'/modules/'.static::getModuleNameLower())) {
-                $paths[] = $path.'/modules/'.static::getModuleNameLower();
+            if (is_dir($path.'/modules/'.static::getModule())) {
+                $paths[] = $path.'/modules/'.static::getModule();
             }
         }
 

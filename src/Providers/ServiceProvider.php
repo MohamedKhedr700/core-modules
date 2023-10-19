@@ -8,8 +8,8 @@ use Raid\Core\Modules\Traits\Provider\WithProviderResolver;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
-    use WithProviderResolver,
-        WithProviderHelper;
+    use WithProviderHelper;
+    use WithProviderResolver;
 
     /**
      * Register any application services.
@@ -20,11 +20,11 @@ class ServiceProvider extends IlluminateServiceProvider
 
         $this->registerConfig();
 
-        $this->registerModule();
-
         $this->registerTranslations();
 
         $this->registerViews();
+
+        $this->registerModule();
     }
 
     /**

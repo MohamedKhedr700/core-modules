@@ -26,27 +26,11 @@ trait WithProviderHelper
     }
 
     /**
-     * Get module name lower.
+     * Get module name.
      */
-    public static function getModuleNameLower(): string
+    public static function getModule(bool $upper = false)
     {
-        return static::getUtility()::module();
-    }
-
-    /**
-     * Get module name upper.
-     */
-    public static function getModuleNameUpper(): string
-    {
-        return ucfirst(static::getUtility()::module());
-    }
-
-    /**
-     * Get route service provider.
-     */
-    public static function getRouteServiceProvider(): string
-    {
-        return static::getUtility()::routeServiceProvider();
+        return static::getUtility()::module($upper);
     }
 
     /**
@@ -55,5 +39,13 @@ trait WithProviderHelper
     public static function getModel(): string
     {
         return static::getUtility()::model();
+    }
+
+    /**
+     * Get route service provider.
+     */
+    public static function getRouteServiceProvider(): string
+    {
+        return static::getUtility()::routeServiceProvider();
     }
 }

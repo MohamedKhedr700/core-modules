@@ -14,7 +14,12 @@ class $STUDLY_NAME$Utility extends Utility implements $STUDLY_NAME$UtilityInterf
     /**
      * {@inheritdoc}
      */
-    public const MODULE = '$LOWER_NAME$';
+    public const MODULE_LOWER = '$LOWER_NAME$';
+
+    /**
+     * {@inheritdoc}
+     */
+    public const MODULE_UPPER = '$STUDLY_NAME$';
 
     /**
      * {@inheritdoc}
