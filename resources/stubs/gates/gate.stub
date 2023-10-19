@@ -9,43 +9,54 @@ use Raid\Core\Gate\Gates\Gate;
 
 class $STUDLY_NAME$Gate extends Gate implements GateInterface
 {
-     /**
-      * Determine whether the account can create a $LOWER_NAME$.
-      */
-     public function create(AccountInterface $account): bool
-     {
-         return true;
-     }
+    /**
+     * {@inheritdoc}
+     */
+    public const ACTIONS = [
+        'create',
+        'list',
+        'find',
+        'update',
+        'delete',
+    ];
 
-     /**
-      * Determine whether the account can list $LOWER_NAME$s.
-      */
-     public function list(AccountInterface $account): bool
-     {
-         return true;
-     }
+    /**
+     * Determine whether the account can create a $LOWER_NAME$.
+     */
+    public function create(AccountInterface $account): bool
+    {
+        return true;
+    }
 
-     /**
-      * Determine whether the account can find a $LOWER_NAME$.
-      */
-     public function find(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
-     {
-         return true;
-     }
+    /**
+     * Determine whether the account can list $LOWER_NAME$s.
+     */
+    public function list(AccountInterface $account): bool
+    {
+        return true;
+    }
 
-     /**
-      * Determine whether the account can update a $LOWER_NAME$.
-      */
-     public function update(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
-     {
-         return true;
-     }
+    /**
+     * Determine whether the account can find a $LOWER_NAME$.
+     */
+    public function find(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
+    {
+        return true;
+    }
 
-     /**
-      * Determine whether the account can delete a $LOWER_NAME$.
-      */
-     public function delete(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
-     {
-         return true;
-     }
+    /**
+     * Determine whether the account can update a $LOWER_NAME$.
+     */
+    public function update(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
+    {
+        return true;
+    }
+
+    /**
+     * Determine whether the account can delete a $LOWER_NAME$.
+     */
+    public function delete(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
+    {
+        return true;
+    }
 }
