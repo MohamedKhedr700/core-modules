@@ -18,6 +18,4 @@ Route::group([
     'prefix' => 'v1/$LOWER_NAME$s',
     'middleware' => ['auth:device']
 ], function () {
-//    list $LOWER_NAME$s
-//    Route::get('/', [$STUDLY_NAME$Controller::class, 'index']);
 });
