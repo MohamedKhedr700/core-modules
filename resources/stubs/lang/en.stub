@@ -5,5 +5,5 @@ return [
     '$LOWER_NAME$' => '$STUDLY_NAME$',
 
     // attributes
-    'attributes' => [];
+    'attributes' => [],
 ];
