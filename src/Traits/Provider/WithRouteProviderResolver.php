@@ -28,7 +28,7 @@ trait WithRouteProviderResolver
     {
         $serviceProvider = static::getServiceProvider();
 
-        return $serviceProvider::getModuleNameUpper();
+        return $serviceProvider::getModule(true);
     }
 
     /**
