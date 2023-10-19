@@ -16,5 +16,4 @@ class List$STUDLY_NAME$Request extends FormRequest
     {
         return $this->withCommonRules();
     }
-
 }

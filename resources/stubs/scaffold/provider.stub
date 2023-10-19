@@ -11,6 +11,4 @@ class $CLASS$ extends ServiceProvider
      * {@inheritdoc}
      */
     public const REPOSITORY = $STUDLY_NAME$Repository::class;
-
-
 }

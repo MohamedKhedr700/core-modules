@@ -16,5 +16,4 @@ class Store$STUDLY_NAME$Request extends FormRequest
     {
         return $this->withCommonRules();
     }
-
 }
