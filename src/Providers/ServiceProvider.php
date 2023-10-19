@@ -16,6 +16,10 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function register(): void
     {
+        if (empty(static::getModule())) {
+            return;
+        }
+
         $this->registerRouteServiceProvider();
 
         $this->registerConfig();
@@ -32,6 +36,10 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function boot(): void
     {
+        if (empty(static::getModule())) {
+            return;
+        }
+
         $this->loadMigrationsFrom(module_path(static::getModule(true), 'Database/Migrations'));
     }
 
