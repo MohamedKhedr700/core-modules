@@ -3,10 +3,12 @@
 namespace Raid\Core\Modules\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Raid\Core\Modules\Traits\Provider\WithModule;
 use Raid\Core\Modules\Traits\Provider\WithRouteProviderResolver;
 
 class RouteServiceProvider extends ServiceProvider
 {
+    use WithModule;
     use WithRouteProviderResolver;
 
     /**

@@ -8,34 +8,11 @@ use Illuminate\Support\Facades\Route;
 trait WithRouteProviderResolver
 {
     /**
-     * Module service provider.
-     */
-    public const SERVICE_PROVIDER = '';
-
-    /**
-     * Get service provider.
-     */
-    public static function serviceProvider(): string
-    {
-        return static::SERVICE_PROVIDER;
-    }
-
-    /**
-     * Get module name.
-     */
-    public function getModuleName(): string
-    {
-        $serviceProvider = static::serviceProvider();
-
-        return $serviceProvider::getModule(true);
-    }
-
-    /**
      * Get module name space.
      */
     public function getModuleNameSpace(): string
     {
-        return Config::get('modules.namespace').'\\'.$this->getModuleName().'\\Http\\Controllers';
+        return Config::get('modules.namespace').'\\'.static::module().'\\Http\\Controllers';
     }
 
     /**
@@ -43,7 +20,7 @@ trait WithRouteProviderResolver
      */
     public function getModuleRoutePath(): string
     {
-        return module_path($this->getModuleName(), 'Routes');
+        return module_path(static::module(), 'Routes');
     }
 
     /**
