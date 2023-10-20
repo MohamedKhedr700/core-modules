@@ -2,6 +2,7 @@
 
 namespace $NAMESPACE$;
 
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Utilities\$STUDLY_NAME$Utility;
 use Raid\Core\Modules\Providers\RouteServiceProvider as RaidRouteServiceProvider;
 
 class RouteServiceProvider extends RaidRouteServiceProvider
@@ -9,5 +10,5 @@ class RouteServiceProvider extends RaidRouteServiceProvider
     /**
      * @inheritdoc
      */
-    public const SERVICE_PROVIDER = $MODULE$ServiceProvider::class;
+    public const MODULE = $MODULE$Utility::MODULE_UPPER;
 }
