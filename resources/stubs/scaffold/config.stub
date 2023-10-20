@@ -8,11 +8,11 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'model' => $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
+    'model' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
 
-    'transformer' => $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
+    'transformer' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
 
-    'route_service_provider' => $MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider::class,
+    'route_service_provider' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -21,12 +21,12 @@ return [
     */
 
     'actions' => [
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Create$STUDLY_NAME$Action::class,
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Delete$STUDLY_NAME$Action::class,
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Find$STUDLY_NAME$Action::class,
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\FindBy$STUDLY_NAME$Action::class,
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\List$STUDLY_NAME$Action::class,
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Update$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Create$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Delete$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Find$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\FindBy$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\List$STUDLY_NAME$Action::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Actions\Crud\Update$STUDLY_NAME$Action::class,
     ],
 
     /*
@@ -44,7 +44,7 @@ return [
     */
 
     'gates' => [
-        $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Gates\$STUDLY_NAME$Gate::class,
+        \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Gates\$STUDLY_NAME$Gate::class,
     ],
 
     /*
