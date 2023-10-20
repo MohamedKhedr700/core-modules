@@ -16,6 +16,6 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Application\$STUDLY_NAME$C
 
 Route::group([
     'prefix' => 'v1/$LOWER_NAME$s',
-    'middleware' => ['auth:device']
+    'middleware' => ['auth:user']
 ], function () {
 });
