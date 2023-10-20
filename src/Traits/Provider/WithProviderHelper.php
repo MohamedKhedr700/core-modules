@@ -44,7 +44,7 @@ trait WithProviderHelper
     /**
      * Get route service provider.
      */
-    public static function getRouteServiceProvider(): string
+    public static function getRouteServiceProvider(): ?string
     {
         return static::getUtility()::getRouteServiceProvider();
     }
