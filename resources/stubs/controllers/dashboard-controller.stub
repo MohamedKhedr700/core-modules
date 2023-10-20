@@ -14,6 +14,7 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Store$STUDLY_NAME$Request;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\Update$STUDLY_NAME$Request;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Requests\List$STUDLY_NAME$Request;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
 use Raid\Core\Controller\Controllers\Controller;
 
@@ -23,6 +24,11 @@ class $STUDLY_NAME$Controller extends Controller
      * {@inheritdoc}
      */
     public const REPOSITORY = $STUDLY_NAME$Repository::class;
+
+    /**
+     * {@inheritdoc}
+     */
+    public const TRANSFORMER = $STUDLY_NAME$Transformer::class;
 
     /**
      * Store a new resource.

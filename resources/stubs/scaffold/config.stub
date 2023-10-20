@@ -10,8 +10,6 @@ return [
 
     'model' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
 
-    'transformer' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
-
     'route_service_provider' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider::class,
 
     /*
