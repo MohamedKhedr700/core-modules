@@ -13,7 +13,7 @@ trait WithProviderResolver
     {
         $routeServiceProvider = static::getRouteServiceProvider();
 
-        if (empty($routeServiceProvider)) {
+        if (! $routeServiceProvider) {
             return;
         }
 
