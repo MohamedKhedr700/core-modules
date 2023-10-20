@@ -69,7 +69,7 @@ return [
             'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
             'views/index' => ['LOWER_NAME'],
             'views/master' => ['LOWER_NAME', 'STUDLY_NAME'],
-            'scaffold/config' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
+            'scaffold/config' => ['STUDLY_NAME', 'MODULE_NAMESPACE'],
             'composer' => ['LOWER_NAME', 'STUDLY_NAME', 'VENDOR', 'AUTHOR_NAME', 'AUTHOR_EMAIL', 'MODULE_NAMESPACE', 'PROVIDER_NAMESPACE'],
             'repositories/repository' => ['MODULE_NAMESPACE', 'STUDLY_NAME'],
             'repositories/contracts/contract' => ['MODULE_NAMESPACE', 'STUDLY_NAME'],

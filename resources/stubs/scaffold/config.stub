@@ -8,8 +8,6 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'name' => '$LOWER_NAME$',
-
     'model' => $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
 
     'transformer' => $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
