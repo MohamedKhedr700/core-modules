@@ -3,13 +3,17 @@
 namespace Raid\Core\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
+use Raid\Core\Modules\Traits\Provider\WithModule;
 use Raid\Core\Modules\Traits\Provider\WithProviderHelper;
 use Raid\Core\Modules\Traits\Provider\WithProviderResolver;
+use Raid\Core\Modules\Traits\Provider\WithRepository;
+use Raid\Core\Modules\Traits\Provider\WithRouteServiceProvider;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
-    use WithProviderHelper;
     use WithProviderResolver;
+    use WithRepository;
+    use WithRouteServiceProvider;
 
     /**
      * Register any application services.

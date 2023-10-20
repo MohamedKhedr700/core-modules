@@ -2,7 +2,7 @@
 
 namespace Raid\Core\Modules\Traits\Provider;
 
-trait WithProviderHelper
+trait WithRepository
 {
     /**
      * Module repository.
@@ -39,13 +39,5 @@ trait WithProviderHelper
     public static function getModel(): string
     {
         return static::getUtility()::getModel();
-    }
-
-    /**
-     * Get route service provider.
-     */
-    public static function getRouteServiceProvider(): ?string
-    {
-        return static::getUtility()::getRouteServiceProvider();
     }
 }

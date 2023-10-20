@@ -11,9 +11,9 @@ trait WithProviderResolver
      */
     public function registerRouteServiceProvider(): void
     {
-        $routeServiceProvider = static::getRouteServiceProvider();
+        $routeServiceProvider = static::routeServiceProvider();
 
-        if (! $routeServiceProvider) {
+        if (empty($routeServiceProvider)) {
             return;
         }
 

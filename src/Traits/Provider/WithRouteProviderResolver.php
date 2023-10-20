@@ -4,19 +4,18 @@ namespace Raid\Core\Modules\Traits\Provider;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
-use Modules\Core\Providers\ServiceProvider;
 
 trait WithRouteProviderResolver
 {
     /**
      * Module service provider.
      */
-    public const SERVICE_PROVIDER = ServiceProvider::class;
+    public const SERVICE_PROVIDER = '';
 
     /**
      * Get service provider.
      */
-    public static function getServiceProvider(): string
+    public static function serviceProvider(): string
     {
         return static::SERVICE_PROVIDER;
     }
@@ -26,7 +25,7 @@ trait WithRouteProviderResolver
      */
     public function getModuleName(): string
     {
-        $serviceProvider = static::getServiceProvider();
+        $serviceProvider = static::serviceProvider();
 
         return $serviceProvider::getModule(true);
     }
