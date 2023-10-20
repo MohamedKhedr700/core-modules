@@ -2,7 +2,7 @@
 
 namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers;
 
-use Raid\Core\Repository\Transformers\Transformer;
+use Raid\Core\Controller\Transformers\Transformer;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
 
 class $STUDLY_NAME$Transformer extends Transformer
