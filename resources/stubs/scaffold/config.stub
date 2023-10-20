@@ -4,13 +4,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Module Configurations
+    | Module model
     |--------------------------------------------------------------------------
     */
 
     'model' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
-
-    'route_service_provider' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Providers\RouteServiceProvider::class,
 
     /*
     |--------------------------------------------------------------------------
