@@ -16,8 +16,6 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function register(): void
     {
-        $this->registerRouteServiceProvider();
-
         $this->registerConfig();
 
         $this->registerTranslations();
@@ -25,6 +23,8 @@ class ServiceProvider extends IlluminateServiceProvider
         $this->registerViews();
 
         $this->registerModule();
+
+        $this->registerRouteServiceProvider();
     }
 
     /**
