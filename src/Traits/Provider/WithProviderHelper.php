@@ -38,7 +38,7 @@ trait WithProviderHelper
      */
     public static function getModel(): string
     {
-        return static::getUtility()::model();
+        return static::getUtility()::getModel();
     }
 
     /**
@@ -46,6 +46,6 @@ trait WithProviderHelper
      */
     public static function getRouteServiceProvider(): string
     {
-        return static::getUtility()::routeServiceProvider();
+        return static::getUtility()::getRouteServiceProvider();
     }
 }
