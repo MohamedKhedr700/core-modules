@@ -14,18 +14,17 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Dashboard\$STUDLY_NAME$Con
 |
 */
 
-Route::group([
-    'prefix' => 'v1/dashboard/$LOWER_NAME$s',
-    'middleware' => ['auth:admin']
-], function () {
-    // store $LOWER_NAME$
-    Route::post('/', [$STUDLY_NAME$Controller::class, 'store']);
-    // list $LOWER_NAME$s
-    Route::get('/', [$STUDLY_NAME$Controller::class, 'index']);
-    // show $LOWER_NAME$
-    Route::get('{id}', [$STUDLY_NAME$Controller::class, 'show']);
-    // update $LOWER_NAME$
-    Route::put('{id}', [$STUDLY_NAME$Controller::class, 'update']);
-    // delete $LOWER_NAME$
-    Route::delete('{id}', [$STUDLY_NAME$Controller::class, 'delete']);
+Route::prefix('v1/dashboard/$LOWER_NAME$s')
+    ->middleware(['auth:admin'])
+    ->group(function () {
+        // store $LOWER_NAME$
+        Route::post('/', [$STUDLY_NAME$Controller::class, 'store']);
+        // list $LOWER_NAME$
+        Route::get('/', [$STUDLY_NAME$Controller::class, 'index']);
+        // show $LOWER_NAME$
+        Route::get('{id}', [$STUDLY_NAME$Controller::class, 'show']);
+        // update $LOWER_NAME$
+        Route::put('{id}', [$STUDLY_NAME$Controller::class, 'update']);
+        // delete $LOWER_NAME$
+        Route::delete('{id}', [$STUDLY_NAME$Controller::class, 'delete']);
 });

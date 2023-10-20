@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Application\$STUDLY_NAME$Controller;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Dashboard\$STUDLY_NAME$Controller as Dashboard$STUDLY_NAME$Controller;
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Application\$STUDLY_NAME$Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,28 +17,25 @@ use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Dashboard\$STUDLY_NAME$Con
 
 // Dashboard routes
 
-Route::group([
-    'prefix' => 'dashboard/$LOWER_NAME$s', 'middleware' => ['auth:admin']
-], function () {
-
-    // store $LOWER_NAME$
-    Route::post('/', [Dashboard$STUDLY_NAME$Controller::class, 'store']);
-    // list $LOWER_NAME$s
-    Route::get('/', [Dashboard$STUDLY_NAME$Controller::class, 'index']);
-    // show $LOWER_NAME$
-    Route::get('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'show']);
-    // update $LOWER_NAME$
-    Route::put('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'update']);
-    // delete $LOWER_NAME$
-    Route::delete('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'delete']);
+Route::prefix('v1/dashboard/$LOWER_NAME$s')
+    ->middleware(['auth:admin'])
+    ->group(function () {
+        // store $LOWER_NAME$
+        Route::post('/', [Dashboard$STUDLY_NAME$Controller::class, 'store']);
+        // list $LOWER_NAME$
+        Route::get('/', [Dashboard$STUDLY_NAME$Controller::class, 'index']);
+        // show $LOWER_NAME$
+        Route::get('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'show']);
+        // update $LOWER_NAME$
+        Route::put('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'update']);
+        // delete $LOWER_NAME$
+        Route::delete('{id}', [Dashboard$STUDLY_NAME$Controller::class, 'delete']);
 });
-
 
 // Application routes
 
-Route::group([
-    'prefix' => '$LOWER_NAME$s',
-], function () {
-//    list $LOWER_NAME$s
-//    Route::get('/', [$STUDLY_NAME$Controller::class, 'index']);
+Route::prefix('v1/$LOWER_NAME$s')
+    ->middleware(['auth:user'])
+    ->group(function () {
+
 });

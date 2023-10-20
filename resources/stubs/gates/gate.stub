@@ -21,7 +21,7 @@ class $STUDLY_NAME$Gate extends Gate implements GateInterface
     ];
 
     /**
-     * Determine whether the account can create a $LOWER_NAME$.
+     * Determine whether the account can create a resource.
      */
     public function create(AccountInterface $account): bool
     {
@@ -29,7 +29,7 @@ class $STUDLY_NAME$Gate extends Gate implements GateInterface
     }
 
     /**
-     * Determine whether the account can list $LOWER_NAME$s.
+     * Determine whether the account can list resources.
      */
     public function list(AccountInterface $account): bool
     {
@@ -37,7 +37,7 @@ class $STUDLY_NAME$Gate extends Gate implements GateInterface
     }
 
     /**
-     * Determine whether the account can find a $LOWER_NAME$.
+     * Determine whether the account can find a resource.
      */
     public function find(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
     {
@@ -45,7 +45,7 @@ class $STUDLY_NAME$Gate extends Gate implements GateInterface
     }
 
     /**
-     * Determine whether the account can update a $LOWER_NAME$.
+     * Determine whether the account can update a resource.
      */
     public function update(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
     {
@@ -53,7 +53,7 @@ class $STUDLY_NAME$Gate extends Gate implements GateInterface
     }
 
     /**
-     * Determine whether the account can delete a $LOWER_NAME$.
+     * Determine whether the account can delete a resource.
      */
     public function delete(AccountInterface $account, $STUDLY_NAME$ $$LOWER_NAME$): bool
     {
