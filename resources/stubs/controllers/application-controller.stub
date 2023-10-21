@@ -4,7 +4,6 @@ namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Controllers\Application;
 
 use Raid\Core\Controller\Controllers\Controller;
 use $MODULE_NAMESPACE$\$STUDLY_NAME$\Repositories\$STUDLY_NAME$Repository;
-use $MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer;
 
 class $STUDLY_NAME$Controller extends Controller
 {
@@ -12,9 +11,4 @@ class $STUDLY_NAME$Controller extends Controller
      * {@inheritdoc}
      */
     public const REPOSITORY = $STUDLY_NAME$Repository::class;
-
-    /**
-     * {@inheritdoc}
-     */
-    public const TRANSFORMER = $STUDLY_NAME$Transformer::class;
 }
