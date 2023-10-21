@@ -17,7 +17,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'transformer' => \Modules\User\Http\Transformers\UserTransformer::class,
+    'transformer' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
 
     /*
     |--------------------------------------------------------------------------
