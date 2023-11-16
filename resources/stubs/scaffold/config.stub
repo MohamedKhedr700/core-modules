@@ -10,6 +10,15 @@ return [
 
     'model' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Transformer
+    |--------------------------------------------------------------------------
+    */
+
+    'transformer' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Http\Transformers\$STUDLY_NAME$Transformer::class,
+
     /*
     |--------------------------------------------------------------------------
     | Module Actions
