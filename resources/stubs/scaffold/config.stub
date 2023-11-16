@@ -10,7 +10,6 @@ return [
 
     'model' => \$MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$::class,
 
-
     /*
     |--------------------------------------------------------------------------
     | Module Transformer
