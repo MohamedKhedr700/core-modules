@@ -36,7 +36,7 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     public function boot(): void
     {
-        $this->loadMigrationsFrom(module_path(static::getModule(true), 'Database/Migrations'));
+        $this->loadMigrationsFrom(module_path(static::getModule(true), 'Database/migrations'));
     }
 
     /**
