@@ -143,9 +143,9 @@ return [
         'generator' => [
             'config' => ['path' => 'Config', 'generate' => true],
             'command' => ['path' => 'Console', 'generate' => true],
-            'migration' => ['path' => 'Database/Migrations', 'generate' => true],
+            'migration' => ['path' => 'Database/migrations', 'generate' => true],
             'seeder' => ['path' => 'Database/Seeders', 'generate' => true],
-            'factory' => ['path' => 'Database/factories', 'generate' => true],
+            'factory' => ['path' => 'Database/Factories', 'generate' => true],
             'controller' => ['path' => 'Http/Controllers', 'generate' => false],
             'filter' => ['path' => 'Http/Middleware', 'generate' => true],
             'request' => ['path' => 'Http/Requests', 'generate' => true],
