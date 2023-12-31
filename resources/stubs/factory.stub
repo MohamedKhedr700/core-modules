@@ -2,21 +2,18 @@
 
 namespace $NAMESPACE$;
 
+use $MODEL_NAMESPACE$\$NAME$;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class $NAME$Factory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
-     *
-     * @var string
      */
-    protected $model = \$MODEL_NAMESPACE$\$NAME$::class;
+    protected string $model = $NAME$::class;
 
     /**
      * Define the model's default state.
-     *
-     * @return array
      */
     public function definition()
     {
