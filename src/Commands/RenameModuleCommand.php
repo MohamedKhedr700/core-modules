@@ -58,6 +58,7 @@ class RenameModuleCommand extends Command
 
         $this->renameActions($modulePath, $module);
         $this->renameControllers($modulePath, $module);
+        $this->renameFactory($modulePath, $module);
         $this->renameGates($modulePath, $module);
         $this->renameLang($modulePath, $module);
         $this->renameModel($modulePath, $module);
