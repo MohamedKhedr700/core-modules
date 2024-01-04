@@ -63,6 +63,7 @@ return [
             'actions/crud/delete-action' => 'Actions/Crud/DeleteIndustryAction.php',
             'gates/gate' => 'Http/Gates/IndustryGate.php',
             'lang/en' => 'Resources/lang/en/industry.php',
+            'database/factory' => 'Database/Factories/IndustryFactory.php'
         ],
         'replacements' => [
             'vite' => ['LOWER_NAME'],
@@ -97,6 +98,7 @@ return [
             'actions/crud/delete-action' => ['LOWER_NAME', 'MODULE_NAMESPACE', 'STUDLY_NAME'],
             'gates/gate' => ['LOWER_NAME', 'MODULE_NAMESPACE', 'STUDLY_NAME'],
             'lang/en' => ['LOWER_NAME', 'STUDLY_NAME'],
+            'database/factory' => ['LOWER_NAME', 'MODULE_NAMESPACE', 'STUDLY_NAME'],
         ],
         'gitkeep' => false,
     ],

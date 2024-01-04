@@ -1,0 +1,25 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Database\Factories;
+
+use $MODULE_NAMESPACE$\$STUDLY_NAME$\Models\$STUDLY_NAME$;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class $STUDLY_NAME$Factory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     */
+    protected $model = $STUDLY_NAME$::class;
+
+    /**
+     * Define the model's default state.
+     */
+    public function definition(): array
+    {
+        return [
+            //
+        ];
+    }
+}
+

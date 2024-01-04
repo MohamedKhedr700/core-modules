@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Raid\Core\Modules\Traits\Command\WithRenameActions;
 use Raid\Core\Modules\Traits\Command\WithRenameControllers;
+use Raid\Core\Modules\Traits\Command\WithRenameFactory;
 use Raid\Core\Modules\Traits\Command\WithRenameGates;
 use Raid\Core\Modules\Traits\Command\WithRenameLang;
 use Raid\Core\Modules\Traits\Command\WithRenameModel;
@@ -20,6 +21,7 @@ class RenameModuleCommand extends Command
 {
     use WithRenameActions;
     use WithRenameControllers;
+    use WithRenameFactory;
     use WithRenameGates;
     use WithRenameLang;
     use WithRenameModel;
